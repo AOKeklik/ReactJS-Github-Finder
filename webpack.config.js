@@ -7,7 +7,8 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist')//HANGI DOSYANIN TARANACAGINI BELIRTTK
+        contentBase: path.resolve(__dirname, 'dist'),//HANGI DOSYANIN TARANACAGINI BELIRTTK
+        historyApiFallback: true //route KULLANIRKEN SAYFALAR ARASNDA DGEZERKEN SADECE index SAYFASINI DONDURUR
     },
     module: {// babel ISLEMLERI ICIN KURALLAR BELIRLEDIK
         rules: [
